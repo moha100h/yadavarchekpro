@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "ir.yadavarchek.pro"
+    namespace = "com.yadavarcheck.tisa"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ir.yadavarchek.pro"
+        applicationId = "com.yadavarcheck.tisa"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -39,9 +39,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = "17"
-    }
+    kotlinOptions { jvmTarget = "17" }
 
     buildFeatures {
         compose = true
@@ -63,7 +61,6 @@ dependencies {
     implementation(libs.lifecycle.runtime)
     implementation(libs.lifecycle.viewmodel)
 
-    // Compose BOM
     implementation(platform(libs.compose.bom))
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.graphics)
@@ -73,46 +70,27 @@ dependencies {
     implementation(libs.compose.animation)
     debugImplementation(libs.compose.ui.tooling)
 
-    // Navigation
     implementation(libs.navigation.compose)
 
-    // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
     implementation(libs.hilt.work)
     ksp(libs.hilt.work.compiler)
 
-    // Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
     ksp(libs.room.compiler)
 
-    // DataStore
     implementation(libs.datastore.preferences)
-
-    // WorkManager
     implementation(libs.workmanager.ktx)
-
-    // Coroutines
     implementation(libs.coroutines.android)
-
-    // Charts
     implementation(libs.vico.compose)
-
-    // Biometric
     implementation(libs.biometric)
-
-    // Coil
     implementation(libs.coil.compose)
-
-    // Gson
     implementation(libs.gson)
-
-    // PDF
     implementation(libs.itextpdf)
 
-    // Test
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext)
     androidTestImplementation(libs.espresso.core)
