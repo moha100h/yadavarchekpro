@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
@@ -38,7 +39,6 @@
             </intent-filter>
         </activity>
 
-        <!-- WorkManager -->
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="${applicationId}.androidx-startup"
@@ -50,14 +50,12 @@
                 tools:node="remove" />
         </provider>
 
-        <!-- Reminder Worker -->
         <service
             android:name=".data.worker.ReminderWorker"
             android:exported="false"
             android:foregroundServiceType="dataSync"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
-        <!-- Boot Receiver -->
         <receiver
             android:name=".data.receiver.BootReceiver"
             android:exported="true">
@@ -67,7 +65,6 @@
             </intent-filter>
         </receiver>
 
-        <!-- Notification Receiver -->
         <receiver
             android:name=".data.receiver.NotificationActionReceiver"
             android:exported="false" />
