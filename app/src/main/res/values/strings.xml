@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">یادآور چک</string>
+    <string name="app_name_full">یادآور چک پرو</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">داشبورد</string>
+    <string name="nav_checks">چک‌ها</string>
+    <string name="nav_calendar">تقویم</string>
+    <string name="nav_reports">گزارش</string>
+    <string name="nav_settings">تنظیمات</string>
+
+    <!-- Dashboard -->
+    <string name="total_receivable">دریافتنی</string>
+    <string name="total_payable">پرداختنی</string>
+    <string name="upcoming_checks">سررسید نزدیک</string>
+    <string name="overdue_checks">معوق</string>
+    <string name="paid_checks">پرداخت شده</string>
+    <string name="quick_actions">دسترسی سریع</string>
+    <string name="add_check">افزودن چک</string>
+    <string name="financial_summary">خلاصه مالی</string>
+
+    <!-- Check Fields -->
+    <string name="check_number">شماره چک</string>
+    <string name="serial_number">شماره سریال</string>
+    <string name="amount">مبلغ</string>
+    <string name="issuer">صادرکننده</string>
+    <string name="receiver">دریافت‌کننده</string>
+    <string name="bank_name">نام بانک</string>
+    <string name="branch_name">نام شعبه</string>
+    <string name="due_date">تاریخ سررسید</string>
+    <string name="registration_date">تاریخ ثبت</string>
+    <string name="reminder_date">تاریخ یادآور</string>
+    <string name="description">توضیحات</string>
+    <string name="check_type">نوع چک</string>
+    <string name="check_status">وضعیت</string>
+
+    <!-- Status -->
+    <string name="status_pending">در انتظار</string>
+    <string name="status_paid">پرداخت شده</string>
+    <string name="status_deposited">واریز شده</string>
+    <string name="status_returned">برگشتی</string>
+    <string name="status_overdue">معوق</string>
+    <string name="status_canceled">لغو شده</string>
+
+    <!-- Type -->
+    <string name="type_receivable">دریافتنی</string>
+    <string name="type_payable">پرداختنی</string>
+
+    <!-- Actions -->
+    <string name="save">ذخیره</string>
+    <string name="cancel">انصراف</string>
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="search">جستجو</string>
+    <string name="filter">فیلتر</string>
+    <string name="confirm">تأیید</string>
+    <string name="back">بازگشت</string>
+    <string name="share">اشتراک‌گذاری</string>
+    <string name="export">خروجی</string>
+
+    <!-- Reminders -->
+    <string name="reminder_30_days">۳۰ روز قبل</string>
+    <string name="reminder_15_days">۱۵ روز قبل</string>
+    <string name="reminder_7_days">۷ روز قبل</string>
+    <string name="reminder_3_days">۳ روز قبل</string>
+    <string name="reminder_1_day">۱ روز قبل</string>
+    <string name="reminder_due_day">روز سررسید</string>
+
+    <!-- Settings -->
+    <string name="settings_theme">تم برنامه</string>
+    <string name="settings_theme_light">روشن</string>
+    <string name="settings_theme_dark">تاریک</string>
+    <string name="settings_theme_system">پیش‌فرض سیستم</string>
+    <string name="settings_notifications">اعلان‌ها</string>
+    <string name="settings_security">امنیت</string>
+    <string name="settings_backup">پشتیبان‌گیری</string>
+    <string name="settings_about">درباره برنامه</string>
+
+    <!-- Security -->
+    <string name="security_pin">قفل PIN</string>
+    <string name="security_biometric">اثر انگشت</string>
+    <string name="enter_pin">PIN را وارد کنید</string>
+    <string name="confirm_pin">PIN را تأیید کنید</string>
+    <string name="pin_mismatch">PIN‌ها مطابقت ندارند</string>
+
+    <!-- Backup -->
+    <string name="backup_now">پشتیبان‌گیری اکنون</string>
+    <string name="restore">بازیابی</string>
+    <string name="last_backup">آخرین پشتیبان</string>
+    <string name="backup_success">پشتیبان‌گیری موفق</string>
+    <string name="restore_success">بازیابی موفق</string>
+
+    <!-- Empty States -->
+    <string name="empty_checks">هیچ چکی ثبت نشده</string>
+    <string name="empty_checks_desc">برای افزودن اولین چک روی دکمه + بزنید</string>
+    <string name="empty_notifications">اعلانی وجود ندارد</string>
+    <string name="empty_customers">مشتری‌ای ثبت نشده</string>
+    <string name="no_results">نتیجه‌ای یافت نشد</string>
+
+    <!-- Errors -->
+    <string name="error_required">این فیلد الزامی است</string>
+    <string name="error_invalid_amount">مبلغ نامعتبر است</string>
+    <string name="error_invalid_date">تاریخ نامعتبر است</string>
+    <string name="error_generic">خطایی رخ داد</string>
+
+    <!-- Customers -->
+    <string name="customers">مشتریان</string>
+    <string name="customer_name">نام مشتری</string>
+    <string name="customer_mobile">موبایل</string>
+    <string name="customer_phone">تلفن</string>
+    <string name="customer_address">آدرس</string>
+    <string name="customer_notes">یادداشت</string>
+
+    <!-- Notifications -->
+    <string name="notifications">اعلان‌ها</string>
+    <string name="mark_all_read">همه را خوانده علامت بزن</string>
+    <string name="notif_reminder_title">یادآور چک</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">مدیریت هوشمند چک</string>
+    <string name="onboarding_desc_1">تمام چک‌های دریافتنی و پرداختنی خود را در یک جا مدیریت کنید</string>
+    <string name="onboarding_title_2">یادآور هوشمند</string>
+    <string name="onboarding_desc_2">قبل از سررسید چک‌ها به موقع یادآوری دریافت کنید</string>
+    <string name="onboarding_title_3">گزارش‌های مالی</string>
+    <string name="onboarding_desc_3">با نمودارها و گزارش‌های حرفه‌ای وضعیت مالی خود را رصد کنید</string>
+    <string name="get_started">شروع کنید</string>
+    <string name="next">بعدی</string>
+    <string name="skip">رد کردن</string>
+
+    <!-- Reports -->
+    <string name="reports">گزارش‌ها</string>
+    <string name="report_daily">روزانه</string>
+    <string name="report_weekly">هفتگی</string>
+    <string name="report_monthly">ماهانه</string>
+    <string name="report_yearly">سالانه</string>
+    <string name="export_pdf">خروجی PDF</string>
+    <string name="export_excel">خروجی Excel</string>
+    <string name="export_csv">خروجی CSV</string>
+
+    <!-- Amounts -->
+    <string name="toman">تومان</string>
+    <string name="rial">ریال</string>
+    <string name="amount_format">%s تومان</string>
+</resources>
