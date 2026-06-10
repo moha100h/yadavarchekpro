@@ -13,15 +13,15 @@ val VazirmatnFamily = FontFamily(
     Font(R.font.vazirmatn_light,   FontWeight.Light),
     Font(R.font.vazirmatn_regular, FontWeight.Normal),
     Font(R.font.vazirmatn_medium,  FontWeight.Medium),
-    Font(R.font.vazirmatn_bold,    FontWeight.Bold),
+    Font(R.font.vazirmatn_bold,    FontWeight.Bold)
 )
 
-val YadavarChekTypography = Typography(
+val Typography = Typography(
     displayLarge  = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Bold,   fontSize = 57.sp, lineHeight = 64.sp),
     displayMedium = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Bold,   fontSize = 45.sp, lineHeight = 52.sp),
     displaySmall  = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Normal, fontSize = 36.sp, lineHeight = 44.sp),
     headlineLarge = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Bold,   fontSize = 32.sp, lineHeight = 40.sp),
-    headlineMedium= TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 28.sp, lineHeight = 36.sp),
+    headlineMedium= TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Bold,   fontSize = 28.sp, lineHeight = 36.sp),
     headlineSmall = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 24.sp, lineHeight = 32.sp),
     titleLarge    = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Bold,   fontSize = 22.sp, lineHeight = 28.sp),
     titleMedium   = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 16.sp, lineHeight = 24.sp),
@@ -31,5 +31,5 @@ val YadavarChekTypography = Typography(
     bodySmall     = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Normal, fontSize = 12.sp, lineHeight = 16.sp),
     labelLarge    = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 14.sp, lineHeight = 20.sp),
     labelMedium   = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 12.sp, lineHeight = 16.sp),
-    labelSmall    = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 11.sp, lineHeight = 16.sp),
+    labelSmall    = TextStyle(fontFamily = VazirmatnFamily, fontWeight = FontWeight.Medium, fontSize = 11.sp, lineHeight = 16.sp)
 )
