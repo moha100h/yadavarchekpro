@@ -17,7 +17,6 @@ import com.yadavarcheck.tisa.ui.screens.dashboard.DashboardScreen
 import com.yadavarcheck.tisa.ui.screens.notifications.NotificationsScreen
 import com.yadavarcheck.tisa.ui.screens.onboarding.OnboardingScreen
 import com.yadavarcheck.tisa.ui.screens.reports.ReportsScreen
-import com.yadavarcheck.tisa.ui.screens.security.SecurityScreen
 import com.yadavarcheck.tisa.ui.screens.settings.SettingsScreen
 import com.yadavarcheck.tisa.ui.screens.splash.SplashScreen
 
@@ -87,8 +86,8 @@ fun YadavarChekNavHost(
 
         composable(Screen.Calendar.route) {
             CalendarScreen(
-                onBack                = { navController.popBackStack() },
-                onNavigateToDetail    = { id -> navController.navigate(Screen.CheckDetail.createRoute(id)) }
+                onBack             = { navController.popBackStack() },
+                onNavigateToDetail = { id -> navController.navigate(Screen.CheckDetail.createRoute(id)) }
             )
         }
 
@@ -101,23 +100,21 @@ fun YadavarChekNavHost(
         }
 
         composable(Screen.Notifications.route) {
-            NotificationsScreen(onBack = { navController.popBackStack() })
+            NotificationsScreen(
+                onBack            = { navController.popBackStack() },
+                onNavigateToCheck = { id -> navController.navigate(Screen.CheckDetail.createRoute(id)) }
+            )
         }
 
         composable(Screen.Settings.route) {
             SettingsScreen(
-                onBack               = { navController.popBackStack() },
-                onNavigateToBackup   = { navController.navigate(Screen.Backup.route) },
-                onNavigateToSecurity = { navController.navigate(Screen.Security.route) }
+                onBack             = { navController.popBackStack() },
+                onNavigateToBackup = { navController.navigate(Screen.Backup.route) }
             )
         }
 
         composable(Screen.Backup.route) {
             BackupScreen(onBack = { navController.popBackStack() })
-        }
-
-        composable(Screen.Security.route) {
-            SecurityScreen(onBack = { navController.popBackStack() })
         }
     }
 }
