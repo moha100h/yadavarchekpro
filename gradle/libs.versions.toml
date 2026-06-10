@@ -15,78 +15,80 @@ core-ktx             = "1.15.0"
 splashscreen         = "1.0.1"
 biometric            = "1.2.0-alpha05"
 vico                 = "2.0.0-beta.2"
-jalaali              = "1.0.5"
 accompanist          = "0.36.0"
 coil                 = "2.7.0"
 gson                 = "2.11.0"
-apache-poi           = "5.3.0"
 itextpdf             = "5.5.13.4"
+junit                = "4.13.2"
+androidx-test-ext    = "1.2.1"
+espresso             = "3.6.1"
 
 [libraries]
 # AndroidX Core
-androidx-core-ktx              = { group = "androidx.core",            name = "core-ktx",                    version.ref = "core-ktx" }
-androidx-lifecycle-runtime     = { group = "androidx.lifecycle",       name = "lifecycle-runtime-ktx",       version.ref = "lifecycle" }
-androidx-lifecycle-viewmodel   = { group = "androidx.lifecycle",       name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
-androidx-activity-compose      = { group = "androidx.activity",        name = "activity-compose",            version.ref = "activity-compose" }
-androidx-splashscreen          = { group = "androidx.core",            name = "core-splashscreen",           version.ref = "splashscreen" }
-androidx-biometric             = { group = "androidx.biometric",       name = "biometric",                   version.ref = "biometric" }
+core-ktx                       = { group = "androidx.core",            name = "core-ktx",                    version.ref = "core-ktx" }
+lifecycle-runtime               = { group = "androidx.lifecycle",       name = "lifecycle-runtime-ktx",       version.ref = "lifecycle" }
+lifecycle-viewmodel             = { group = "androidx.lifecycle",       name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+activity-compose                = { group = "androidx.activity",        name = "activity-compose",            version.ref = "activity-compose" }
+androidx-splashscreen           = { group = "androidx.core",            name = "core-splashscreen",           version.ref = "splashscreen" }
+biometric                       = { group = "androidx.biometric",       name = "biometric",                   version.ref = "biometric" }
 
 # Compose BOM
-compose-bom                    = { group = "androidx.compose",         name = "compose-bom",                 version.ref = "compose-bom" }
-compose-ui                     = { group = "androidx.compose.ui",      name = "ui" }
-compose-ui-graphics            = { group = "androidx.compose.ui",      name = "ui-graphics" }
-compose-ui-tooling-preview     = { group = "androidx.compose.ui",      name = "ui-tooling-preview" }
-compose-ui-tooling             = { group = "androidx.compose.ui",      name = "ui-tooling" }
-compose-material3              = { group = "androidx.compose.material3", name = "material3" }
-compose-material-icons         = { group = "androidx.compose.material", name = "material-icons-extended" }
-compose-animation              = { group = "androidx.compose.animation", name = "animation" }
+compose-bom                     = { group = "androidx.compose",         name = "compose-bom",                 version.ref = "compose-bom" }
+compose-ui                      = { group = "androidx.compose.ui",      name = "ui" }
+compose-ui-graphics             = { group = "androidx.compose.ui",      name = "ui-graphics" }
+compose-ui-tooling-preview      = { group = "androidx.compose.ui",      name = "ui-tooling-preview" }
+compose-ui-tooling              = { group = "androidx.compose.ui",      name = "ui-tooling" }
+compose-material3               = { group = "androidx.compose.material3", name = "material3" }
+compose-material-icons          = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose-animation               = { group = "androidx.compose.animation", name = "animation" }
 
 # Navigation
-navigation-compose             = { group = "androidx.navigation",      name = "navigation-compose",          version.ref = "navigation" }
+navigation-compose              = { group = "androidx.navigation",      name = "navigation-compose",          version.ref = "navigation" }
 
 # Room
-room-runtime                   = { group = "androidx.room",            name = "room-runtime",                version.ref = "room" }
-room-ktx                       = { group = "androidx.room",            name = "room-ktx",                    version.ref = "room" }
-room-compiler                  = { group = "androidx.room",            name = "room-compiler",               version.ref = "room" }
+room-runtime                    = { group = "androidx.room",            name = "room-runtime",                version.ref = "room" }
+room-ktx                        = { group = "androidx.room",            name = "room-ktx",                    version.ref = "room" }
+room-compiler                   = { group = "androidx.room",            name = "room-compiler",               version.ref = "room" }
 
 # DataStore
-datastore-preferences          = { group = "androidx.datastore",       name = "datastore-preferences",       version.ref = "datastore" }
+datastore-preferences           = { group = "androidx.datastore",       name = "datastore-preferences",       version.ref = "datastore" }
 
 # WorkManager
-workmanager                    = { group = "androidx.work",            name = "work-runtime-ktx",            version.ref = "workmanager" }
-hilt-work                      = { group = "androidx.hilt",            name = "hilt-work",                   version = "1.2.0" }
-hilt-work-compiler             = { group = "androidx.hilt",            name = "hilt-compiler",               version = "1.2.0" }
+workmanager-ktx                 = { group = "androidx.work",            name = "work-runtime-ktx",            version.ref = "workmanager" }
+hilt-work                       = { group = "androidx.hilt",            name = "hilt-work",                   version = "1.2.0" }
+hilt-work-compiler              = { group = "androidx.hilt",            name = "hilt-compiler",               version = "1.2.0" }
 
 # Hilt
-hilt-android                   = { group = "com.google.dagger",        name = "hilt-android",                version.ref = "hilt" }
-hilt-compiler                  = { group = "com.google.dagger",        name = "hilt-android-compiler",       version.ref = "hilt" }
-hilt-navigation-compose        = { group = "androidx.hilt",            name = "hilt-navigation-compose",     version = "1.2.0" }
+hilt-android                    = { group = "com.google.dagger",        name = "hilt-android",                version.ref = "hilt" }
+hilt-compiler                   = { group = "com.google.dagger",        name = "hilt-android-compiler",       version.ref = "hilt" }
+hilt-navigation-compose         = { group = "androidx.hilt",            name = "hilt-navigation-compose",     version = "1.2.0" }
 
 # Coroutines
-coroutines-android             = { group = "org.jetbrains.kotlinx",    name = "kotlinx-coroutines-android",  version.ref = "coroutines" }
+coroutines-android              = { group = "org.jetbrains.kotlinx",    name = "kotlinx-coroutines-android",  version.ref = "coroutines" }
 
 # Charts
-vico-compose-m3                = { group = "com.patrykandpatrick.vico", name = "compose-m3",                 version.ref = "vico" }
-
-# Jalaali (Persian Calendar)
-jalaali                        = { group = "com.github.samanzamani",   name = "PersianDate",                 version.ref = "jalaali" }
+vico-compose                    = { group = "com.patrykandpatrick.vico", name = "compose-m3",                 version.ref = "vico" }
 
 # Accompanist
-accompanist-permissions        = { group = "com.google.accompanist",   name = "accompanist-permissions",     version.ref = "accompanist" }
+accompanist-permissions         = { group = "com.google.accompanist",   name = "accompanist-permissions",     version.ref = "accompanist" }
 
 # Coil
-coil-compose                   = { group = "io.coil-kt",               name = "coil-compose",                version.ref = "coil" }
+coil-compose                    = { group = "io.coil-kt",               name = "coil-compose",                version.ref = "coil" }
 
 # Gson
-gson                           = { group = "com.google.code.gson",     name = "gson",                        version.ref = "gson" }
+gson                            = { group = "com.google.code.gson",     name = "gson",                        version.ref = "gson" }
 
-# PDF & Excel
-itextpdf                       = { group = "com.itextpdf",             name = "itextpdf",                    version.ref = "itextpdf" }
-apache-poi                     = { group = "org.apache.poi",           name = "poi",                         version.ref = "apache-poi" }
+# PDF
+itextpdf                        = { group = "com.itextpdf",             name = "itextpdf",                    version.ref = "itextpdf" }
+
+# Test
+junit                           = { group = "junit",                    name = "junit",                       version.ref = "junit" }
+androidx-test-ext               = { group = "androidx.test.ext",        name = "junit",                       version.ref = "androidx-test-ext" }
+espresso-core                   = { group = "androidx.test.espresso",   name = "espresso-core",               version.ref = "espresso" }
 
 [plugins]
-android-application            = { id = "com.android.application",     version.ref = "agp" }
-kotlin-android                 = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-kotlin-compose                 = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-hilt                           = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-ksp                            = { id = "com.google.devtools.ksp",     version.ref = "ksp" }
+android-application             = { id = "com.android.application",     version.ref = "agp" }
+kotlin-android                  = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose                  = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hilt                            = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+ksp                             = { id = "com.google.devtools.ksp",     version.ref = "ksp" }
