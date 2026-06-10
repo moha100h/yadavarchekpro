@@ -8,6 +8,10 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class OnboardingViewModel @Inject constructor(private val prefs: PreferencesManager) : ViewModel() {
-    fun setOnboarded() = viewModelScope.launch { prefs.setOnboarded(true) }
+class OnboardingViewModel @Inject constructor(
+    private val prefs: PreferencesManager
+) : ViewModel() {
+    fun finishOnboarding() {
+        viewModelScope.launch { prefs.setOnboarded(true) }
+    }
 }
