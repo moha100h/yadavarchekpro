@@ -129,7 +129,7 @@ fi
 eval "set -- $(
         printf '%s\n' "$DEFAULT_JVM_OPTS" |
         xargs -n1 |
-        sed ' s/'\''/ '\''\\\\'\'''/ g;1!G;h;$!d ' |
+        sed ' s/'\''/'\''\\'\''\'''/g;1!G;h;$!d ' |
         tr '\n' ' '
     ) "$@""
 
