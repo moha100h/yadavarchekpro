@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,54m-46,0a46,46 0,1 1,92 0a46,46 0,1 1,-92 0" />
+
+    <!-- Check icon body -->
+    <path
+        android:fillColor="#1B6CA8"
+        android:pathData="M30,35 L78,35 Q82,35 82,39 L82,73 Q82,77 78,77 L30,77 Q26,77 26,73 L26,39 Q26,35 30,35Z" />
+
+    <!-- Lines on check -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M35,48 L73,48" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M35,56 L65,56" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M35,64 L55,64" />
+
+    <!-- Bell reminder dot -->
+    <path
+        android:fillColor="#F59E0B"
+        android:pathData="M72,62m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,58 L72,64 M70,65 L74,65" />
+</vector>
